@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notebook_book"
+version = "0.1.0"
+description = "A book made of Jupyter notebooks"
+authors = [
+    {name="Your Name", email="you@example.com"}
+]
+dependencies = [
+    "numpy",
+    "scipy"
+]
+
+[project.optional-dependencies]
+dev = [
+    "nbconvert",
+    "nbmerge",
+    "jupyter"
+]
